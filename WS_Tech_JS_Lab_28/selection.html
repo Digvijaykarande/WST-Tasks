@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selectors Demo</title>
+
+<style>
+/* -------- Element Selector -------- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+/* -------- ID Selector -------- */
+#main-header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 4px solid black;
+}
+
+/* -------- Class Selector -------- */
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px 10px;
+    border: 1px solid white;
+    background-color: #555;
+}
+
+.nav-link:hover {
+    background-color: #777;
+}
+
+/* -------- Descendant Selector -------- */
+section p {
+    color: #222;
+    font-size: 16px;
+    border-left: 4px solid blue;
+    padding-left: 8px;
+}
+
+/* Extra Styling */
+main {
+    display: flex;
+    padding: 20px;
+}
+
+article {
+    background: white;
+    border: 2px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+aside {
+    background: #ddd;
+    border: 2px dashed gray;
+    padding: 15px;
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+    border-top: 4px solid black;
+}
+</style>
+</head>
+
+<body>
+<header id="main-header">
+    <h1>My Styled Website</h1>
+    <nav>
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+    <section>
+        <article>
+            <h2>Article One</h2>
+            <p>This paragraph is styled using a descendant selector (section p).</p>
+        </article>
+
+        <article>
+            <h2>Article Two</h2>
+            <p>CSS selectors help target HTML elements and apply styles easily.</p>
+        </article>
+    </section>
+
+    <aside>
+        <h3>Sidebar</h3>
+        <p>Extra content like links or notes can go here.</p>
+    </aside>
+
+</main>
+
+<footer>
+    <p>© 2026 My Website</p>
+</footer>
+
+</body>
+</html>

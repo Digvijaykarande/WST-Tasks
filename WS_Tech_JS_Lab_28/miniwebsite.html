@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semantic Layout</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background: #555;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 6px 12px;
+    border: 1px solid white;
+}
+
+nav a:hover {
+    background: #777;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border: 2px solid #ccc;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+article {
+    padding: 15px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Website</h1>
+    <p>Simple Semantic Layout</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
+
+<main>
+    <section>
+        <article>
+            <h2>Welcome</h2>
+            <p>This is the main content area of the website. You can write your website content here.</p>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <h2>About</h2>
+            <p>This layout uses semantic HTML tags combined with CSS styling.</p>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 My Website | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

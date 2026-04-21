@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form onsubmit="return validate()">
+<input id="name" placeholder="Name"><br>
+<input id="age" placeholder="Age"><br>
+<input id="email" placeholder="Email"><br>
+<input type="submit">
+</form>
+<script>
+function validate(){
+let n=document.getElementById("name").value;
+let a=document.getElementById("age").value;
+let e=document.getElementById("email").value;
+if(n==""||a==""||e==""){alert("Fill all");return false;}
+return true;
+}
+</script>
+</body>
+</html>

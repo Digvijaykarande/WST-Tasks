@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+<input id="a" placeholder="Num1">
+<input id="b" placeholder="Num2">
+<button type="button" onclick="add()">Add</button>
+</form>
+<p id="res"></p>
+<script>
+function add(){
+let a=parseInt(document.getElementById("a").value);
+let b=parseInt(document.getElementById("b").value);
+document.getElementById("res").innerText=a+b;
+}
+</script>
+</body>
+</html>

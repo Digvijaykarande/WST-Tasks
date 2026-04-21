@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Registration</title></head>
+<body>
+<form onsubmit="return validate()">
+<input type="text" id="name" placeholder="Name"><br>
+<input type="email" id="email" placeholder="Email"><br>
+<input type="password" id="password" placeholder="Password"><br>
+<input type="submit">
+</form>
+<script>
+function validate(){
+let n=document.getElementById("name").value;
+let e=document.getElementById("email").value;
+let p=document.getElementById("password").value;
+if(n==""||e==""||p==""){alert("All fields required");return false;}
+return true;
+}
+</script>
+</body>
+</html>

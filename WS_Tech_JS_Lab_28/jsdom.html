@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOM Manipulation</title>
+</head>
+
+<body id="pageBody">
+
+<h2 id="heading">Original Text</h2>
+
+<button onclick="changeContent()">Change Content</button>
+
+<script>
+    function changeContent() {
+    let heading = document.getElementById("heading");
+    let body = document.getElementById("pageBody");
+
+    heading.textContent = "Text Changed Successfully!";
+    body.style.backgroundColor = "lightblue";
+}
+
+</script>
+
+</body>
+</html>
